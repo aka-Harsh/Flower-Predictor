@@ -1,0 +1,6 @@
+1. This dataset folder should contain the dataset folder named flowers.
+
+2. The flowers dataset downloading instruction is given on the Github page of this repository or download it from 👇
+https://www.kaggle.com/datasets/alxmamaev/flowers-recognition
+
+3. After downloading and extracting the flowers folder paste the flower dataset in this folder.

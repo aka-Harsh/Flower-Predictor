@@ -1,0 +1,8 @@
+1. This models folder will contain 3 trained model.
+- inceptionv3_model.h5
+- resnet50_model.h5
+- vgg16_model.h5
+
+2. The 3 trained models would be created after running the train_model.py file.
+
+3. For more instructions follow the github repository of this project.
