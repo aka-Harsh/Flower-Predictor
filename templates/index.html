@@ -7,3 +7,35 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Flower Predictor</h1>
+            <button id="theme-toggle" class="theme-toggle">
+                <span class="theme-toggle-dark">🌙</span>
+                <span class="theme-toggle-light">☀️</span>
+            </button>
+        </header>
+        <main>
+            <form method="post" enctype="multipart/form-data">
+                <div class="file-input-wrapper">
+                    <input type="file" name="file" id="file" accept="image/*" required>
+                    <label for="file">Choose an image</label>
+                    <span id="file-name">No file chosen</span>
+                </div>
+                <button type="submit" class="submit-btn">Predict</button>
+            </form>
+            {% if message %}
+                <p class="message">{{ message }}</p>
+            {% endif %}
+            {% if image_path %}
+                <div class="result">
+                    <img src="{{ image_path }}" alt="Uploaded Image" class="uploaded-image">
+                    <p class="prediction">Prediction: <span>{{ prediction }}</span></p>
+                    <p class="confidence">Confidence: <span>{{ confidence|round(2) }}%</span></p>
+                </div>
+            {% endif %}
+        </main>
+    </div>
+</body>
+</html>
