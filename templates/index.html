@@ -37,5 +37,28 @@
             {% endif %}
         </main>
     </div>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const fileInput = document.getElementById('file');
+        const fileName = document.getElementById('file-name');
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
+        });
+
+        if (localStorage.getItem('dark-mode') === 'true') {
+            body.classList.add('dark-mode');
+        }
+
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                fileName.textContent = e.target.files[0].name;
+            } else {
+                fileName.textContent = 'No file chosen';
+            }
+        });
+    </script>
 </body>
 </html>
