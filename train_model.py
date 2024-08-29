@@ -42,3 +42,17 @@ def create_model(base_model, model_name):
     model.compile(optimizer=Adam(learning_rate=0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
     return model
 
+model_vgg16 = create_model(base_model_vgg16, 'vgg16')
+model_resnet50 = create_model(base_model_resnet50, 'resnet50')
+model_inceptionv3 = create_model(base_model_inceptionv3, 'inceptionv3')
+
+# Train models
+epochs = 10
+models = [model_vgg16, model_resnet50, model_inceptionv3]
+model_names = ['vgg16', 'resnet50', 'inceptionv3']
+
+for model, name in zip(models, model_names):
+    print(f"Training {name}...")
+    model.fit(train_generator, epochs=epochs, validation_data=validation_generator)
+    model.save(f'models/{name}_model.h5')
+
