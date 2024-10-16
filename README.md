@@ -14,7 +14,7 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="30" alt="tensorflow logo"  />
 
 ## Video Demo
-🎥 Here you can find a video of the working project
+🎥 Here you can find a video of the working project.
 
 https://github.com/user-attachments/assets/4043c481-7b9b-4516-97c0-d64decb7f723
 
@@ -23,37 +23,37 @@ https://github.com/user-attachments/assets/4043c481-7b9b-4516-97c0-d64decb7f723
 
 Install Python on your system 👉 [Python](https://www.python.org/downloads/)
 <br><br>
-Intall the flower dataset to train your model from 👉 [Flower](https://www.kaggle.com/datasets/alxmamaev/flowers-recognition)<br>
+Intall the flower dataset to train your model from 👉 [Flower](https://www.kaggle.com/datasets/alxmamaev/flowers-recognition).<br>
 (🚨NOTE: Extract the folder and paste the flower folder in the dataset folder after cloning the repository)
 
 ## Deployment
 
-To run this project first clone this repository using
+To run this project first clone this repository using:
 
 ```bash
   git clone https://github.com/aka-Harsh/Flower-Predictor.git
 ```
-Locate this repository using terminal and then create a virtual enviroment and activate it
+Locate this repository using terminal and then create a virtual enviroment and activate it:
 
 ```bash
   python -m venv venv
   .\venv\Scripts\activate
 ```
-Perform this in your VScode editor to select python intepreter
+Perform this in your VScode editor to select python intepreter:
 ```bash
   Select View > Command Palette > Python: Select Interpreter > Enter Interpreter path > venv > Script > python.exe
 ```
 
-Install all the required packages 
+Install all the required packages:
 ```bash
   pip install -r requirements.txt
 ```
-Train the Models (This will create 3 trained model in your empty models folder)
+Train the Models (This will create 3 trained model in your empty models folder):
 ```bash
   python train_model.py
 ```
 
-Finally run the app.py file
+Finally run the app.py file:
 ```bash
   python app.py
 ```
