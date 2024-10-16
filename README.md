@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/4043c481-7b9b-4516-97c0-d64decb7f723
 
 ## Prerequisites
 
-Install Python on your system 👉 [Python](https://www.python.org/downloads/)
+Install Python on your system 👉 [Python](https://www.python.org/downloads/).
 <br><br>
 Intall the flower dataset to train your model from 👉 [Flower](https://www.kaggle.com/datasets/alxmamaev/flowers-recognition).<br>
 (🚨NOTE: Extract the folder and paste the flower folder in the dataset folder after cloning the repository)
